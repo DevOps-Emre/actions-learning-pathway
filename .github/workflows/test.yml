@@ -2,11 +2,7 @@ name: test
 on: push
 jobs:
   test-job:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  
     steps:
-      - name: Check out repository code
-        uses: actions/checkout@v3
-      - run: echo "$(cat test.txt)"  
-    steps:
-  - name: Adding markdown
-    run: echo '### Hello world! 🚀' >> $GITHUB_STEP_SUMMARY
+      - name: Adding markdown
+        run: echo '### Hello world! 🚀' >> $GITHUB_STEP_SUMMARY
